@@ -1,6 +1,6 @@
 FROM debian:stretch-slim
 
-MAINTAINER akbarTK <akbar.exe@gmail.com>
+MAINTAINER akbarTK <akbartk@gmail.com>
 
 ENV APACHE_RUN_USER www-data
 ENV APACHE_RUN_GROUP www-data
