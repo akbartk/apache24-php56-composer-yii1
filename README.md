@@ -1,6 +1,6 @@
 # apache24-php56-composer-yii1
 
-Base image docker | debian:stretch-slim | apache24 | php7.2
+Base image docker | debian:stretch-slim | apache24 | php7.2 or php5.6
 
 ```
 debian:stretch-slim
