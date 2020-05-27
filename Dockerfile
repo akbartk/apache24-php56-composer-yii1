@@ -146,7 +146,10 @@ EXPOSE 2323 80 443
 # clean apt cache
 RUN apt-get autoremove \
     && apt-get clean \
-    && rm -rf /tmp/* /root/.cache /var/lib/apt/lists/*; 
+    && rm -rf /tmp/* /root/.cache /var/lib/apt/lists/*;
+
+# setsebool
+RUN setsebool -P httpd_can_network_connect 1 && setsebool -P httpd_can_network_connect_db 1
 
 # Workdir
 WORKDIR /var/www/
