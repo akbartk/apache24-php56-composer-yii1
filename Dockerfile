@@ -128,7 +128,6 @@ RUN rm -rf /var/www/html/index.html && chown -R www-data:www-data /var/www/html 
     ln -s /var/www/vhost/ /etc/apache2/sites-available && \
     chown -R root:root /var/www/vhost;
 
-
 # ssh
 RUN apt-get update \
     && apt-get --no-install-recommends install -y openssh-server bash \
