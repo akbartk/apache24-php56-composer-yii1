@@ -149,7 +149,8 @@ RUN apt-get autoremove \
     && rm -rf /tmp/* /root/.cache /var/lib/apt/lists/*;
 
 # setsebool
-RUN setsebool -P httpd_can_network_connect 1 && setsebool -P httpd_can_network_connect_db 1
+CMD setsebool -P httpd_can_network_connect 1
+CMD setsebool -P httpd_can_network_connect_db 1
 
 # Workdir
 WORKDIR /var/www/
