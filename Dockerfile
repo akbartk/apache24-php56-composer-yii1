@@ -83,6 +83,7 @@ RUN apt-get update && \
     php${PHP_V}-ldap 		\
     php${PHP_V}-mbstring	\
     php${PHP_V}-mysql		\
+    php${PHP_V}-pgsql		\
     php${PHP_V}-oauth		\
     php${PHP_V}-odbc		\
     php${PHP_V}-uploadprogress \
